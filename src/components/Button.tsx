@@ -3,9 +3,10 @@ import { ReactNode } from "react";
 
 type PropType = {
   children: ReactNode;
+  onClick?: () => void;
 };
 
-const Button = ({ children }: PropType) => {
+const Button = ({ children, onClick }: PropType) => {
   return (
     <button
       style={{
